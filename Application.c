@@ -130,12 +130,16 @@ void APP_Start(void) {
 #endif
     LED1_On();
     LED2_Off();
-    WAIT1_Waitms(500); /* just wait for some arbitrary time .... */
+    WAIT1_Waitms(100); /* just wait for some arbitrary time .... */
 
+    CS1_CriticalVariable()
+    CS1_EnterCritical();
     LED1_Off();
     LED2_On();
+    CS1_ExitCritical();
 
-    WAIT1_Waitms(500);
+    WAIT1_Waitms(100
+    		);
   }
 #endif
 }
