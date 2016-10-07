@@ -134,6 +134,7 @@ void APP_Start(void) {
 
     CS1_CriticalVariable()
     CS1_EnterCritical();
+
     LED1_Off();
     LED2_On();
     CS1_ExitCritical();
