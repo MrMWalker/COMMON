@@ -128,19 +128,7 @@ void APP_Start(void) {
 #if PL_CONFIG_HAS_EVENTS
     EVNT_HandleEvent(APP_EventHandler, TRUE);
 #endif
-    LED1_On();
-    LED2_Off();
-    WAIT1_Waitms(100); /* just wait for some arbitrary time .... */
 
-    CS1_CriticalVariable()
-    CS1_EnterCritical();
-
-    LED1_Off();
-    LED2_On();
-    CS1_ExitCritical();
-
-    WAIT1_Waitms(100
-    		);
   }
 #endif
 }
